@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 const constants_mapSpace = "999";
 const constants_iast2glyphMap = [
     ["an", "740"],

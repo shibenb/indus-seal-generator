@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 in vec2 v_position;
 
 uniform vec3 u_bgParams;

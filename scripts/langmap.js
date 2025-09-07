@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 function langmap_iast2indus(input, prefix, suffix) {
     const space = prefix + constants_mapSpace + suffix;
     const lines = []

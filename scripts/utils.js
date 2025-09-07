@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 async function utils_loadTextFile(path) {
     return new Promise((resolve, reject) => {
         //path = path + "?cacheBuster=" + Date.now(); //debug

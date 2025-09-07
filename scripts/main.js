@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 const _langInputMenuElem = document.getElementById("lang-input-menu");
 const _textInputContainerElem = document.getElementById("text-input-container");
 const _confirmButtonElem = document.getElementById("confirm-button");

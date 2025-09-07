@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 let _gl = null;
 let _transform = { name: "u_transform", value: null };
 let _bg = {

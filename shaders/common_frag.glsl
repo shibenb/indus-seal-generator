@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2025 Shiben Bhattacharjee
+
 uniform vec3  u_lightDir;
 uniform vec3  u_ambientColor;
 uniform vec3  u_diffuseColor;
