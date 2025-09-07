@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Indus Seal Generator</title>
+    <link rel="stylesheet" href="depends/varnamproject_embed.css" />
+</head>
+<body>
+    <h2>Indus Seal Generator</h2>
+    <p>Generate your own earthy seal, similar to the ones found in Indus Valley Civilization, in it's enigmatic script. This project is inspired by and based on YajnaDevam's work of decipherment by crypto analysis.</p>
+
+    <!-- Script Elements START -->
+    <div><select id="lang-input-menu"></select></div>
+    <div id="text-input-container"><textarea id="text-input"></textarea></div>
+    <div><button id="confirm-button">Generate Indus Seal</button><hr /></div>
+    <div id="user-input-container" style="display: none;"><table>
+        <tr><td>Selected Keyboard:</td><td id="user-input-kb"></td></tr>
+        <tr><td>Entered Text:</td><td id="user-input-text"></td></tr>
+        <tr><td>Detected Script:</td><td id="user-input-detected-script"></td></tr>
+        <tr><td>IAST Conversion:</td><td id="user-input-iast-conversion"></td></tr>
+    </table><hr /></div>
+    <div id="warnings-container" style="display: none;">Warnings:<ol>
+        <li id="warnings-list-item-0" style="display: none;">Mismatch between selected keyboard and detected script. Proceeding with detected script.</li>
+        <li id="warnings-list-item-1" style="display: none;">Unknown character(s) detected, to be skipped in the render. Avoid special character(s) or mixing different language scripts.</li>
+        <li id="warnings-list-item-2" style="display: none;">Detected Language is English. This is a non-phonetic language, hence transliteration to Indus Glyphs will be approximate.</li>
+        <li id="warnings-list-item-3" style="display: none;">Too short or empty input. Longer multi-line inputs produce good renders.</li>
+    </ol><hr /></div>
+    <div id="logging-container" style="display: none;"><div style="display: flex; align-items: center;">
+        <img src="images/loading-shiva.gif" style="margin-right: 6px;" /><span id="logging-status-text">Initializing...</span>
+    </div><hr /></div>
+    <div id="debug-container" style="display: none; text-align: right;"></div>
+    <div><div id="output-container" style="display: none;"><h3>Your Indus Seal</h3>
+        <div id="render-container"></div><br /><button id="export-button">Download</button> <button id="share-button" style="display: none;">Share</button>
+    <hr /></div></div>
+    <!-- Script Elements STOP -->
+
+    <div><p>Created by <a href="https://shiben.tech/" target="_blank">Shiben Bhattacharjee</a>.</p></div>
+    <div>Attribution:<ul>
+        <li>Inspired by and based on <a href="https://indusscript.net/" target="_blank">Indus Inscriptions by Yajnadevam</a> [<a href="https://www.academia.edu/78867798/A_cryptanalytic_decipherment_of_the_Indus_Script" target="_blank">paper1</a>] [<a href="https://www.academia.edu/129058397/Introducing_Indus_Keyboard_A_first_of_its_kind_interactive_tool_to_visualize_the_Indus_Script_in_Devanagari_and_Brahmi" target="_blank">paper2</a>]</li>
+        <li>Indian languages keyboards by <a href="https://varnamproject.com/" target="_blank">Varnam Project</a>, <a href="https://github.com/varnamproject/webpage-embed-plugin" target="_blank">Webpage Embed Plugin</a></li>
+        <li>Transliteration of Indian languages to IAST by <a href="https://github.com/indic-transliteration/sanscript.js" target="_blank">indic-transliteration/sanscript.js</a></li>
+        <li>Indus Valley Script font consolidated by <a href="https://github.com/decipher-indus/font-generation" target="_blank">decipher-indus/font-generation</a></li>
+        <li>Indus Glyph SDFs generated using <a href="https://github.com/Chlumsky/msdfgen" target="_blank">Chlumsky/msdfgen</a></li>
+        <li>Noise textures by <a href="https://opengameart.org/content/700-noise-textures" target="_blank">Screaming Brain Studios</a> from <a href="https://opengameart.org/" target="_blank">opengameart.org</a></li>
+        <li>Material textures by <a href="https://opengameart.org/content/100-seamless-textures" target="_blank">Mitch Featherston</a> from <a href="https://opengameart.org/" target="_blank">opengameart.org</a></li>
+    </ul></div>
+
+    <!-- External Dependencies -->
+    <script src="depends/sanscript.min.js"></script>
+    <script src="depends/varnamproject_embed.js"></script>
+
+    <!-- Indus Seal Generator -->
+    <script src="scripts/constants.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/render.js"></script>
+    <script src="scripts/langmap.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
